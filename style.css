@@ -1,0 +1,118 @@
+/* base CSS */
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #325050;
+  font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background:#333333;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  padding: 00px 0 00px 0;
+  background:#C0C0C0; 50% 0 ('img/trail.jpg') no-repeat; /* old IE fallback */
+  background-image: url('img/overlay.png'),url('img/trail.jpg');
+  background-position: 0 0, 0 0;
+  background-repeat: repeat, no-repeat;
+  background-size: cover, cover;
+  text-align: left;
+  position:relative;
+}
+footer{
+  width: 90%;
+  left:5%;
+  clear: both;
+  background-color: rgb(138,188,159);
+  position: relative;
+  display: block;
+}
+nav{
+  top:140px;
+  width:200px;
+  left:90%;
+  background-color: rgb(138,188,159);
+  position:absolute;
+  z-index:3;
+}
+#maintext{
+  float: none;
+  width: 90%;
+  left:5%;
+  background-color:#FFFFFF;
+  overflow:hidden;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative;
+}
+
+a {
+  color: #0d8ba1;
+  /*-webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;*/
+  display:inline;
+  text-decoration: none;
+}
+  a:visited {
+    color: #1a5952;
+  }
+  a:hover, a:focus {
+    color: #0599c2;
+    text-decoration: underline;
+  }
+
+
+h1, h2 {
+  padding: 0 10%;
+  margin: 0;
+  font-weight: normal;
+}
+h1 {
+  padding-top: 8px;
+  padding-bottom: 5px;
+  border-bottom: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 2.2em;
+  text-transform: uppercase;
+}
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
+h2::before {
+  content: " ";
+  padding: 50px;
+}
+h3 {
+  margin: 1em 0 0 0;
+  color: #2e484c;
+  font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 1.8em;
+  font-weight: normal;
+}
+p {
+  margin: 0.75em 0;
+  line-height: 1.5;
+}
+.text-center {
+  text-align: center;
+}
+
+
+
