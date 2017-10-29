@@ -14,18 +14,20 @@ body {
   font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
   overflow-y: scroll;
   overflow-x: hidden;
-  background:#333333;
+  background: #333366;
+  background-image: url('Img/raster.png');
+  background-size: 1.7%;
 }
 
 header {
-  height: 100px;
+  height: 70px;
   width: 100%;
   padding: 00px 0 00px 0;
-  background:#C0C0C0; 50% 0 ('img/trail.jpg') no-repeat; /* old IE fallback */
-  background-image: url('img/overlay.png'),url('img/trail.jpg');
-  background-position: 0 0, 0 0;
-  background-repeat: repeat, no-repeat;
-  background-size: cover, cover;
+  background:#C0C0C0; 50% 0 ('Img/emp_ex.png') no-repeat; /* old IE fallback */
+  background-image: url('Img/emp_ex.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: left;
   position:relative;
 }
@@ -33,28 +35,39 @@ footer{
   width: 90%;
   left:5%;
   clear: both;
-  background-color: rgb(138,188,159);
+  background-color:#FFFFFF;
   position: relative;
   display: block;
 }
 nav{
   top:140px;
-  width:200px;
-  left:90%;
-  background-color: rgb(138,188,159);
+  width:300px;
+  left:73%;
   position:absolute;
   z-index:3;
+  line-height: 150%;
 }
 #maintext{
   float: none;
   width: 90%;
   left:5%;
+  min-height: 400px;
   background-color:#FFFFFF;
   overflow:hidden;
   padding-left: 5%;
   padding-right: 5%;
   position: relative;
 }
+
+#midthird{
+  float: none;
+  width: 80%;
+  left: 0%;
+  overflow:hidden;
+  position: relative;
+}
+
+  
 
 a {
   color: #0d8ba1;
@@ -73,45 +86,41 @@ a {
   }
 
 
-h1, h2 {
-  padding: 0 10%;
-  margin: 0;
-  font-weight: normal;
-}
 h1 {
+  color: #2e484c;
   padding-top: 8px;
-  padding-bottom: 5px;
-  border-bottom: none;
+  padding-bottom: 4px;
   font-family: 'Julius Sans One', sans-serif;
+  font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 2.2em;
-  text-transform: uppercase;
 }
 h2 {
-  display: block;
+  color: #2e484c;
   padding-top: 5px;
-  padding-bottom: 30px;
   border-top: none;
-  color: rgba(255,255,255,0.6);
-  font-size: 1.6em;
-  font-style: italic;
+  font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 2em;
 }
-h2::before {
-  content: " ";
-  padding: 50px;
-}
+
 h3 {
-  margin: 1em 0 0 0;
   color: #2e484c;
   font-family:"Georgia","Palatino Linotype", "Book Antiqua", Palatino, serif;
   font-size: 1.8em;
   font-weight: normal;
 }
+
 p {
   margin: 0.75em 0;
   line-height: 1.5;
 }
 .text-center {
   text-align: center;
+}
+.text-indent {
+  padding-left: 30px;
+}
+.text-indent2 {
+  padding-left: 60px;
 }
 
 
